@@ -22,31 +22,32 @@ int main()
 
 	switch (choice) {
 	case 1: {
-		cout << "Выбран легкий уровень сложности\n" << endl;
+		cout << "Выбран легкий уровень сложности";
 		questCount = 3;
 		minNumber = 0;
 		maxNumber = 4;
 		break;
 	}
 	case 2: {
-		cout << "Выбран средний уровень сложности\n" << endl;
+		cout << "Выбран средний уровень сложности";
 		questCount = 5;
 		minNumber = 1;
 		maxNumber = 6;
 		break;
 	}
 	case 3: {
-		cout << "Выбран сложный уровень сложности\n" << endl;
+		cout << "Выбран сложный уровень сложности";
 		questCount = 7;
 		minNumber = 3;
 		maxNumber = 9;
 		break;
 	}
 	default:
-		cout << "Неверная операция" << endl;
+		cout << "Неверная операция";
 		break;
 	}
 
+	cout << ", будет " << questCount << " примеров" << endl << endl;
 	for (int i = 0; i < questCount; i++) {
 		x = rand() % maxNumber + minNumber;
 		y = rand() % maxNumber + minNumber;
